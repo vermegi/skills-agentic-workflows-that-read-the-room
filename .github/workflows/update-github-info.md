@@ -7,15 +7,18 @@ on:
 permissions:
   contents: read
 tools:
-  edit: {}
-  web-fetch: {}
+  edit:
+  web-fetch:
 network:
   allowed:
     - github.blog
     - github.com
     - awesome-copilot.github.com
 safe-outputs:
-  create-pull-request: {}
+  create-pull-request: 
+    title-prefix: "[mona] "
+    draft: true
+    fallback-as-issue: false
 ---
 
 # Update GitHub Info
